@@ -50,6 +50,7 @@ const config = {
     env: process.env.NODE_ENV || 'development'
   },
   virtualdevice: {
+    heartbeat: process.env.DEVICE_HEARTBEAT === 'true',
     userInfo: {
       user: process.env.XIVELY_ACCOUNT_BROKER_USER,
       password: process.env.XIVELY_ACCOUNT_BROKER_PASSWORD
